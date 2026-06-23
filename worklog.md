@@ -57,3 +57,20 @@ Stage Summary:
 - Hero "Sarajevo": ostaje na istoj poziciji, miče se u DESNO na scroll
 - Book Now: centrirani tekst "Rezerviši večeru u Začinu" (ispravan pravopis), vidljiv na desktop i mobil
 - Slika čaše vina u galeriji: učitana i prikazana
+
+---
+Task ID: 4
+Agent: main
+Task: Zamijeniti sliku u "Ko smo mi" sekciji sa uploadovanom slikom zacin-kosmomi.jpg
+
+Work Log:
+- Provjerio da uploadana slika postoji: /home/z/my-project/upload/zacin-kosmomi.jpg (373KB)
+- Kopirao sliku u /home/z/my-project/public/zacin/zacin-kosmomi.jpg kako bi je Next.js mogao servisirati kao statički asset
+- WhoWeAre.tsx: zamijenjen Unsplash URL sa lokalnim putanjom /zacin/zacin-kosmomi.jpg
+- Također: ispravio shadow boju na badge-u (rgba 184,57,47 stara crvena → 45,90,61 nova zelena) da bude konzistentno sa zelenom paletom
+- Uklonjen prazan { } blok koji je ostao u kodu
+- Verifikovano agent-browser-om (desktop + mobil) - slika se prikazuje pravilno, prikazuje enterijer restorana sa stolovima, stolicama i ambijentom
+
+Stage Summary:
+- "Ko smo mi" sekcija sada koristi uploadanu sliku enterijera restorana umjesto Unsplash stock fotografije
+- Slika je lokalno pohranjena u public folderu — nema ovisnosti o vanjskim servisima

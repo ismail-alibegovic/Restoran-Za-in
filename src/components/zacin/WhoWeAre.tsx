@@ -11,15 +11,14 @@ export default function WhoWeAre() {
           <div className="lg:col-span-5 relative">
             <Parallax speed={0.15}>
               <div className="relative aspect-[3/4] overflow-hidden">
-                { }
                 <img
-                  src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+                  src="/zacin/zacin-kosmomi.jpg"
                   alt="Kuvar Restorana Začin priprema jelo"
                   className="w-full h-full object-cover"
                 />
               </div>
             </Parallax>
-            <div className="absolute -bottom-8 -right-4 md:-right-8 bg-spice text-cream p-6 md:p-8 max-w-[260px] shadow-[0_20px_40px_-15px_rgba(184,57,47,0.5)]">
+            <div className="absolute -bottom-8 -right-4 md:-right-8 bg-spice text-cream p-6 md:p-8 max-w-[260px] shadow-[0_20px_40px_-15px_rgba(45,90,61,0.5)]">
               <p className="font-heading text-5xl md:text-6xl font-extrabold leading-none mb-2">
                 10
               </p>
