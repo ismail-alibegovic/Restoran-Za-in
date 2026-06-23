@@ -5,36 +5,31 @@ import { motion } from "framer-motion";
 
 const PHOTOS = [
   {
-    src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80",
-    alt: "Enterijer restorana sa toplim svjetlom",
+    src: "/zacin/galerija-3.jpg",
+    alt: "Enterijer restorana sa drvenim stolovima, cvećem na stolu i vintage ambijentom",
     label: "Ambijent",
     big: true,
   },
   {
-    src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80",
-    alt: "Stolovi sa postavljenim tanjirima",
-    label: "Stol",
+    src: "/zacin/galerija-1.jpeg",
+    alt: "Unutrašnjost restorana sa drvenim plafonom i policama punih vina",
+    label: "Enterijer",
   },
   {
-    src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80",
-    alt: "Tanjur sa pažljivo pripremljenim jelom",
-    label: "Tanjir",
+    src: "/zacin/galerija-2.jpg",
+    alt: "Bočica vina Chardonnay na stoljniku u toplom ambijentu restorana",
+    label: "Vino",
   },
   {
-    src: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80",
-    alt: "Kuvar u pripremi jela",
-    label: "Kuhinja",
+    src: "/zacin/galerija-5.jpg",
+    alt: "Trpezarijski prostor sa drvenim stolovima, barskim šankom i policama vina",
+    label: "Trpezarija",
   },
   {
-    src: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=80",
-    alt: "Čaša vina",
-    label: "Vinski podrum",
+    src: "/zacin/galerija-4.jpg",
+    alt: "Veče u restoranu sa svjetlima, dekorativnom lozicom i gostima za stolom",
+    label: "Atmosfera",
     big: true,
-  },
-  {
-    src: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=80",
-    alt: "Desert sa voćem",
-    label: "Desert",
   },
 ];
 

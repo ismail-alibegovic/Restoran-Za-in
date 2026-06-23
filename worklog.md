@@ -74,3 +74,26 @@ Work Log:
 Stage Summary:
 - "Ko smo mi" sekcija sada koristi uploadanu sliku enterijera restorana umjesto Unsplash stock fotografije
 - Slika je lokalno pohranjena u public folderu — nema ovisnosti o vanjskim servisima
+
+---
+Task ID: 5
+Agent: main
+Task: Zamijeniti postojeće Unsplash slike u galeriji sa 5 uploadovanih slika restorana
+
+Work Log:
+- Verifikovao 5 uploadovanih slika u /home/z/my-project/upload/: images.jpeg, zacin-768x1024.jpg, 20210605_180252.jpg, 2022-11-13.jpg, 2017-09-21.jpg
+- Kopirao sve 5 slika u /home/z/my-project/public/zacin/ pod deskriptivnim imenima: galerija-1.jpeg, galerija-2.jpg, galerija-3.jpg, galerija-4.jpg, galerija-5.jpg
+- Za svaku sliku uradio VLM analizu da identifikuje sadržaj i kreira smislen alt i label tekstove
+- Gallery.tsx: zamijenjen cijeli PHOTOS niz — uklonjeno 6 Unsplash URL-ova, dodano 5 lokalnih slika sa tačnim alt i label opisima:
+  - galerija-3 → "Ambijent" (drveni stolovi, cveće, vintage) — big
+  - galerija-1 → "Enterijer" (drveni plafon, police vina)
+  - galerija-2 → "Vino" (Chardonnay na stoljniku)
+  - galerija-5 → "Trpezarija" (barski šank, police vina)
+  - galerija-4 → "Atmosfera" (svjetla, lozica, gosti) — big
+- DOM verifikacija potvrdila: svih 5 slika učitano sa complete=true, ispravne dimenzije (768x447 do 1360x1020)
+- Lint prolazi bez grešaka, layout radi na desktop i mobil
+
+Stage Summary:
+- Galerija sada prikazuje prave fotografije Restorana Začin umjesto Unsplash stock slika
+- Sve slike lokalno pohranjene u public/zacin/ — brže učitavanje, nema ovisnosti o vanjskim servisima
+- Layout zadržao mosaic grid sa 2 "big" slike (galerija-3 i galerija-4) koje idu preko 2 reda
