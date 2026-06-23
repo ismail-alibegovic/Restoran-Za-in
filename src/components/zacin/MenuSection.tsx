@@ -200,15 +200,6 @@ export default function MenuSection() {
             </div>
           ))}
         </div>
-
-        {/* Footer note */}
-        <Reveal>
-          <p className="mt-14 text-center text-sm text-muted-ink italic max-w-2xl mx-auto">
-            Cijene su izražene u konvertibilnim markama (KM). Za sezonske
-            specijalitete i dnevne ponude pitajte vašeg konobara — uvijek imamo
-            nešto izvan menija.
-          </p>
-        </Reveal>
       </div>
     </section>
   );
