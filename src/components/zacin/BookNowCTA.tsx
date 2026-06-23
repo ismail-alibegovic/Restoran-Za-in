@@ -10,8 +10,8 @@ export default function BookNowCTA() {
     target: ref,
     offset: ["start end", "end start"],
   });
-  const x1 = useTransform(scrollYProgress, [0, 1], ["0vw", "-30vw"]);
-  const x2 = useTransform(scrollYProgress, [0, 1], ["0vw", "30vw"]);
+  const x1 = useTransform(scrollYProgress, [0, 1], ["0vw", "-15vw"]);
+  const x2 = useTransform(scrollYProgress, [0, 1], ["0vw", "15vw"]);
 
   return (
     <section ref={ref} className="bg-spice text-cream py-24 md:py-32 overflow-hidden">
@@ -19,13 +19,13 @@ export default function BookNowCTA() {
       <div className="relative mb-16 md:mb-20">
         <motion.h2
           style={{ x: x1 }}
-          className="display-hero text-cream text-[18vw] md:text-[15vw] leading-[0.85] whitespace-nowrap pl-[3vw]"
+          className="display-hero text-cream text-[11vw] md:text-[9vw] leading-[0.85] whitespace-nowrap pl-[3vw]"
         >
           Rezerviši veče
         </motion.h2>
         <motion.h2
           style={{ x: x2 }}
-          className="display-hero text-cream/30 text-[18vw] md:text-[15vw] leading-[0.85] whitespace-nowrap pl-[15vw] -mt-[3vw]"
+          className="display-hero text-cream/30 text-[11vw] md:text-[9vw] leading-[0.85] whitespace-nowrap pl-[20vw] -mt-[2vw]"
         >
           u Začinu
         </motion.h2>

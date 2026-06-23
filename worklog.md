@@ -23,3 +23,20 @@ Stage Summary:
 - Sve animacije rade: smooth scroll, parallax hero text, fade-in reveals, magnetic buttons, rotirajući stamp, hover efekti na meniju, image zoom na hover
 - Lint prolazi bez grešaka, dev server radi bez runtime grešaka
 - Sajt je potpuno responzivan (desktop i mobilni)
+
+---
+Task ID: 2
+Agent: main
+Task: Izmjene - hero Sarajevo parallax ulijevo, Book Now manji font, zamjena crvene sa zelenom
+
+Work Log:
+- globals.css: zamijenjena crvena paleta (#b8392f) sa elegantnom zelenom (#2d5a3d, #1f4030, #5a8a6e) - ostavljena --destructive crvena za UI greške
+- Hero.tsx: "Sarajevo" sada ide ulijevo na scroll (-22vw umjesto +25vw), font smanjen sa 26/22vw na 22/18vw, padding sa 20vw na 3vw - cijela riječ vidljiva na vrhu
+- BookNowCTA.tsx: font smanjen sa 18/15vw na 11/9vw, transformacije smanjene sa ±30vw na ±15vw - "Rezerviši veče" i "u Začinu" potpuno vidljivi
+- Verifikovano agent-browser-om (desktop 1440px i mobilni 390px) - sve riječi vidljive, zelena boja primijenjena
+- Lint prolazi bez grešaka
+
+Stage Summary:
+- Hero "Sarajevo" sada ide ulijevo i cijela riječ je vidljiva prije scrolla
+- Book Now CTA font smanjen, obje linije potpuno vidljive
+- Brand boja promijenjena iz crvene u elegantnu šumsko-zelenu (#2d5a3d) — zadržan isti feel sa krem pozadinom i zlatnim saffron akcentima

@@ -13,7 +13,7 @@ export default function Hero() {
 
   // Big text moves left as you scroll down
   const textX1 = useTransform(scrollYProgress, [0, 1], ["0vw", "-25vw"]);
-  const textX2 = useTransform(scrollYProgress, [0, 1], ["0vw", "25vw"]);
+  const textX2 = useTransform(scrollYProgress, [0, 1], ["0vw", "-22vw"]);
   // Image parallax
   const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const imgScale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
@@ -87,7 +87,7 @@ export default function Hero() {
         <div className="relative -mt-[6vw] md:-mt-[5vw]">
           <motion.h1
             style={{ x: textX2, opacity }}
-            className="display-hero text-ink text-[26vw] md:text-[22vw] leading-[0.85] whitespace-nowrap pl-[20vw]"
+            className="display-hero text-ink text-[22vw] md:text-[18vw] leading-[0.85] whitespace-nowrap pl-[3vw]"
           >
             Sarajevo
           </motion.h1>
