@@ -26,7 +26,7 @@ const PHOTOS = [
     label: "Kuhinja",
   },
   {
-    src: "https://images.unsplash.com/photo-1471011259958-7d8e7c70f3c1?auto=format&fit=crop&w=900&q=80",
+    src: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=80",
     alt: "Čaša vina",
     label: "Vinski podrum",
     big: true,

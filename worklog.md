@@ -40,3 +40,20 @@ Stage Summary:
 - Hero "Sarajevo" sada ide ulijevo i cijela riječ je vidljiva prije scrolla
 - Book Now CTA font smanjen, obje linije potpuno vidljive
 - Brand boja promijenjena iz crvene u elegantnu šumsko-zelenu (#2d5a3d) — zadržan isti feel sa krem pozadinom i zlatnim saffron akcentima
+
+---
+Task ID: 3
+Agent: main
+Task: Ispravke - hero Sarajevo animacija u desno, Book Now ispravan tekst centriran, slika čaše vina
+
+Work Log:
+- Hero.tsx: "Sarajevo" sada ide U DESNO na scroll (textX2: 0vw → +22vw), ostaje na istoj poziciji (lijevo, pl-3vw), font smanjen na mobilu (22vw→12vw) da stane u 390px viewport
+- BookNowCTA.tsx: ispravljen tekst "Rezerviši večeru u Začinu" (bila pogrešna verzija "Rezerviši veče"), centriran, uklonjen parallax x-transformacije (samo fade-in animacija), font 8.5vw mobil/6vw desktop, whitespace-nowrap samo na desktopu (na mobilu se prirodno omota)
+- Gallery.tsx: zamijenjen neispravni Unsplash URL (photo-1471011259958) sa ispravnim (photo-1510812431401) - čaša vina sada učitana
+- DOM verifikacija potvrdila: na scrollu, "Začin" ide lijevo (left: 0 → -103px), "Sarajevo" ide desno (left: 0 → 91px) — tačno kako traženo
+- Lint prolazi bez grešaka
+
+Stage Summary:
+- Hero "Sarajevo": ostaje na istoj poziciji, miče se u DESNO na scroll
+- Book Now: centrirani tekst "Rezerviši večeru u Začinu" (ispravan pravopis), vidljiv na desktop i mobil
+- Slika čaše vina u galeriji: učitana i prikazana

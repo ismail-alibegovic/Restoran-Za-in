@@ -1,33 +1,21 @@
 "use client";
 
 import { Reveal } from "./anim";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function BookNowCTA() {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const x1 = useTransform(scrollYProgress, [0, 1], ["0vw", "-15vw"]);
-  const x2 = useTransform(scrollYProgress, [0, 1], ["0vw", "15vw"]);
-
   return (
-    <section ref={ref} className="bg-spice text-cream py-24 md:py-32 overflow-hidden">
-      {/* Big moving text */}
-      <div className="relative mb-16 md:mb-20">
+    <section className="bg-spice text-cream py-24 md:py-32 overflow-hidden">
+      {/* Big centered title */}
+      <div className="relative mb-16 md:mb-20 text-center px-6">
         <motion.h2
-          style={{ x: x1 }}
-          className="display-hero text-cream text-[11vw] md:text-[9vw] leading-[0.85] whitespace-nowrap pl-[3vw]"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          className="display-hero text-cream text-[8.5vw] leading-[1.05] md:text-[6vw] md:leading-[0.95] md:whitespace-nowrap"
         >
-          Rezerviši veče
-        </motion.h2>
-        <motion.h2
-          style={{ x: x2 }}
-          className="display-hero text-cream/30 text-[11vw] md:text-[9vw] leading-[0.85] whitespace-nowrap pl-[20vw] -mt-[2vw]"
-        >
-          u Začinu
+          Rezerviši večeru u Začinu
         </motion.h2>
       </div>
 
