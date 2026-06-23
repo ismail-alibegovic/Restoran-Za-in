@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { motion, useScroll, useTransform, type Variants } from "framer-motion";
 import { useRef, type ReactNode } from "react";
 
 /* =========================================================================
@@ -82,20 +82,28 @@ export function RevealText({
 }
 
 /* =========================================================================
-   Parallax — subtle visual lift via will-change (GPU-friendly)
+   Parallax — translate child on scroll
    ========================================================================= */
 export function Parallax({
   children,
+  speed = 0.2,
   className = "",
 }: {
   children: ReactNode;
   speed?: number;
   className?: string;
 }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], [speed * 100, -speed * 100]);
+
   return (
-    <div className={`${className} will-change-transform`}>
+    <motion.div ref={ref} style={{ y }} className={className}>
       {children}
-    </div>
+    </motion.div>
   );
 }
 
