@@ -1,0 +1,25 @@
+{
+  "code": 200,
+  "data": {
+    "description": "",
+    "external": {},
+    "html": "<html lang=\"en\"><head><title>tripadvisor.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></head><body style=\"margin:0\"><script data-cfasync=\"false\">var dd={'rt':'i','cid':'AHrlqAAAAAMAECTIG8oY84oAImA0LA==','hsh':'2F05D671381DB06BEE4CC52C7A6FD3','b':1738966,'s':46694,'e':'c3ab847dba8154bea0502e7cd343e2a6a8976861d4af3563bcfe57e5e8fbcc7b6e10a049c92b22ba9f5e4b1da96ecad9','qp':'','host':'geo.captcha-delivery.com','cookie':'YJzc77DDFlugULmLPBTriEiuar5nmYIdY92~6BRr6owCRDB~Mqbz7WtDkTTYDqVDcko~iXMQhau27czrm2QHrSU5lYbF_WTF7QPiwUDw7b~IqpeHOnwerLo2836fNPSM'}</script><script data-cfasync=\"false\" src=\"https://ct.captcha-delivery.com/i.js\"></script><iframe src=\"https://geo.captcha-delivery.com/interstitial/?initialCid=AHrlqAAAAAMAECTIG8oY84oAImA0LA%3D%3D&amp;hash=2F05D671381DB06BEE4CC52C7A6FD3&amp;cid=YJzc77DDFlugULmLPBTriEiuar5nmYIdY92~6BRr6owCRDB~Mqbz7WtDkTTYDqVDcko~iXMQhau27czrm2QHrSU5lYbF_WTF7QPiwUDw7b~IqpeHOnwerLo2836fNPSM&amp;referer=https%3A%2F%2Fwww.tripadvisor.com%2FRestaurant_Review-g294450-d8590063-Reviews-Zacin-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_and_Herzegovina.html&amp;s=46694&amp;e=c3ab847dba8154bea0502e7cd343e2a6a8976861d4af3563bcfe57e5e8fbcc7b6e10a049c92b22ba9f5e4b1da96ecad9&amp;b=1738966&amp;dm=cd\" sandbox=\"allow-scripts allow-same-origin allow-forms\" allow=\"accelerometer; gyroscope; magnetometer\" title=\"DataDome Device Check\" width=\"100%\" height=\"100%\" style=\"height:100vh;\" frameborder=\"0\" border=\"0\" scrolling=\"yes\"></iframe></body></html>",
+    "httpStatus": 200,
+    "httpStatusText": "OK",
+    "metadata": {
+      "lang": "en",
+      "viewport": "width=device-width, initial-scale=1.0"
+    },
+    "title": "tripadvisor.com",
+    "url": "https://www.tripadvisor.com/Restaurant_Review-g294450-d8590063-Reviews-Zacin-Sarajevo_Sarajevo_Canton_Federation_of_Bosnia_and_Herzegovina.html",
+    "usage": {
+      "tokens": 704
+    }
+  },
+  "meta": {
+    "usage": {
+      "tokens": 704
+    }
+  },
+  "status": 20000
+}
